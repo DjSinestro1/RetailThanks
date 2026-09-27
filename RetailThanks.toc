@@ -1,0 +1,8 @@
+## Interface: 120100
+## Title: RetailThanks
+## Notes: Friendly buff thanks in say or whisper. Retail beta; skips restricted auras.
+## Author: Sinestro
+## Version: 0.1.0-beta.1
+## SavedVariables: RetailThanksDB
+
+RetailThanks.lua
