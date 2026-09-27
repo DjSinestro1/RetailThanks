@@ -2,7 +2,7 @@
 ## Title: RetailThanks
 ## Notes: Automatic buff thank-you whispers. Retail beta; skips restricted auras.
 ## Author: Sinestro
-## Version: 0.1.0-beta.2
+## Version: 0.1.0-beta.3
 ## SavedVariables: RetailThanksDB
 
 RetailThanks.lua

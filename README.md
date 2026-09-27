@@ -18,6 +18,8 @@ Whispering is fully automatic when a qualifying buff and its caster are readable
 Extract `RetailThanks` into `_retail_/Interface/AddOns`, restart the client, and enable the addon. Do not run another auto-thanks addon alongside it.
 
 - `/rthanks status` - settings and diagnostics.
+- `/rthanks mode whisper` - automatic private replies (default).
+- `/rthanks mode emote` - built-in THANK emote directed at the buff caster.
 - `/rthanks on` / `/rthanks off` - enable or disable.
 - `/rthanks preview` - local preview only.
 - `/rthanks groups on|off` - include buffs while grouped (default on).
@@ -26,7 +28,9 @@ Extract `RetailThanks` into `_retail_/Interface/AddOns`, restart the client, and
 - `/rthanks message random` - restore all 28 replies.
 - `/rthanks debug` - local debug output.
 
-`/retailthanks` is an alias. This version only sends whispers; old channel commands cannot reenable say.
+`/retailthanks` is an alias. The selected mode persists across reloads. `channel` is an alias for `mode`; SAY is not supported.
+
+Emote mode uses the game's fixed thank-you, not the 28 whisper phrases or custom text. It passes the caster's name to the emote API without changing your target. Targeted delivery and automatic emotes still need in-game testing; range/client restrictions may prevent the intended result. Failed requests do not trigger a whisper fallback or retry. Mode changes cancel pending replies.
 
 ## Testing
 
