@@ -1,3 +1,9 @@
+# 0.1.0-beta.2
+
+- Restored fully automatic private whispers; previous SAY settings migrate to WHISPER.
+- Removed manual say drafts and the send command.
+- Kept all 28 replies, duration filtering, cooldowns, and restricted-data checks.
+
 # 0.1.0-beta.1
 
 - Initial Retail 12.1.0 beta.
